@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+  .whyUs {
+    width: 100vw;
+    height: 600vh;
+    position: absolute;
+    top: 0;
+  }
+
+  .flag1 {
+    animation: scroll 20s linear infinite;
+  }
+
+  .flag2 {
+    animation: scroll 25s linear infinite;
+  }
+
+  .flag3 {
+    animation: scroll 30s linear infinite;
+  }
+
+  .flag4 {
+    animation: scroll 25s linear infinite;
+  }
+
+  .flag5 {
+    animation: scroll 35s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50%);
+    }
+  }
+}
+
+.connector {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.25;
+  }
+  100% {
+    scale: 1;
+  }
+}

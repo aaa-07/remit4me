@@ -1,0 +1,164 @@
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url('/images/home/clouds.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 982px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+  }
+
+  .graduate {
+    animation: graduate 10s ease-in-out infinite;
+  }
+
+  .graduateFamily {
+    animation: graduateFamily 10s ease-in-out infinite;
+  }
+
+  @keyframes graduate {
+    0%,
+    45% {
+      opacity: 1;
+    }
+    50%,
+    95% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes graduateFamily {
+    100%,
+    0%,
+    45% {
+      opacity: 0;
+    }
+    50%,
+    95% {
+      opacity: 1;
+    }
+  }
+
+  .first {
+    animation: first 10s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  .second {
+    animation: second 10s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  .third {
+    animation: third 10s ease-in-out infinite;
+  }
+
+  .fourth {
+    animation: fourth 10s ease-in-out infinite;
+  }
+
+  @keyframes third {
+    10%,
+    50% {
+      transform: translateY(0);
+      height: 83px;
+      width: 363px;
+      opacity: 1;
+    }
+
+    51% {
+      opacity: 0;
+    }
+
+    0%,
+    5%,
+    100% {
+      transform: translateY(200px);
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes first {
+    6%,
+    50% {
+      transform: translateX(0);
+      height: 730px;
+      width: 730px;
+      opacity: 1;
+    }
+
+    54% {
+      transform: translateX(-400px);
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+
+    75%,
+    90%,
+    100%,
+    0%,
+    1% {
+      transform: translateX(400px);
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes second {
+    5% {
+      transform: translateX(-400px);
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+
+    25%,
+    40%,
+    47% {
+      transform: translateX(400px);
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+
+    52%,
+    95%,
+    100%,
+    0%,
+    1% {
+      transform: translateX(0);
+      height: 730px;
+      width: 730px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fourth {
+    60%,
+    100%,
+    1%,
+    0% {
+      transform: translateY(0);
+      height: 83px;
+      width: 363px;
+      opacity: 1;
+    }
+
+    2% {
+      opacity: 0;
+    }
+
+    55% {
+      transform: translateY(200px);
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+}

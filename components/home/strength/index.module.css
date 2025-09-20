@@ -1,0 +1,7 @@
+.shield {
+  background-image: url('/images/home/shield.png');
+  background-size: 825px;
+  background-position-x: 105px;
+  background-position-y: 450px;
+  background-repeat: no-repeat;
+}

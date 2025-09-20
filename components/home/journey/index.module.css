@@ -1,0 +1,85 @@
+.cards {
+  margin-bottom: calc(100vh - 626px);
+}
+
+.card {
+  padding: 32px;
+  overflow: hidden;
+}
+
+.number {
+  font-size: 24px;
+  line-height: 36px;
+  color: #ababab;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 42px;
+  color: #028e75;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: 600;
+}
+
+.content {
+  display: block;
+  color: #092929;
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0;
+  margin-top: 36px;
+  will-change: opacity;
+}
+
+.card:hover {
+  background-color: #bff229;
+  will-change: background-color;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.card:hover .number {
+  color: #092929;
+  margin-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-bottom: 24px !important;
+  will-change: margin-top, padding-left, padding-right, margin-bottom;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .title {
+  font-size: 24px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  will-change: font-size, padding-left, padding-right;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cards :nth-child(1) .number {
+  margin-top: 170px;
+}
+
+.cards :nth-child(2) .number {
+  margin-top: 32px;
+}
+
+.cards :nth-child(3) .number {
+  margin-top: 170px;
+}
+
+.cards :nth-child(4) .number {
+  margin-top: 270px;
+}
+
+.cards :nth-child(5) .number {
+  margin-top: 140px;
+}
