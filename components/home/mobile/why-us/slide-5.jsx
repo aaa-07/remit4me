@@ -57,11 +57,11 @@ const Slide5 = ({ exchangeRate }) => {
     <div className='pb-40'>
       <div className='relative bg-[#ADB8FF] h-[250px] z-[1]'>
         <img src='/images/home/mobile/why-us/student.png' alt='slide-5' width={480} height={480} className='absolute top-[-40px] left-1/2 -translate-x-1/2' />
-        <Image src='/images/home/mobile/why-us/tuition-fee.svg' alt='converter' width={331} height={83} className='absolute bottom-[-280px] left-1/2 -translate-x-1/2' />
+        {/* <Image src='/images/home/mobile/why-us/tuition-fee.svg' alt='converter' width={331} height={83} className='absolute bottom-[-280px] left-1/2 -translate-x-1/2' /> */}
         <ConverterCard exchangeRate={exchangeRate} />
       </div>
       <div className={classNames('transition-all duration-1000', isInView ? 'translate-x-0 opacity-100' : 'translate-x-24 opacity-0')} ref={ref}>
-        <div className='mt-[350px] why-us-title-mobile pl-20 pr-10'>Send Again in Seconds - As Easy as UPI</div>
+        <div className='mt-[300px] why-us-title-mobile pl-20 pr-10'>Send Again in Seconds - As Easy as UPI</div>
         <div className='mt-4 why-us-description-mobile pl-20 pr-10'>
           Once you've sent it once, the rest is just a tap. No forms, no repeats, no stress - just money moving at the speed of trust.
         </div>

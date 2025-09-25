@@ -14,10 +14,10 @@ const Slide2 = () => {
       <div className={classNames('transition-all duration-1000', isInView ? 'translate-x-0 opacity-100' : 'translate-x-24 opacity-0')} ref={ref}>
         <div className='why-us-title-mobile pl-20 pr-10'>Backed by trusted top banks</div>
         <div className='mt-4 why-us-description-mobile pl-20 pr-10'>Your money moves through authorised banks, fully compliant with RBI regulations.</div>
-        <div className='mt-8 flex items-center gap-4 pl-20'>
+        {/* <div className='mt-8 flex items-center gap-4 pl-20'>
           <img src='/images/home/mobile/why-us/icici.png' alt='icici' width={82} height={83} />
           <img src='/images/home/mobile/why-us/sbi.png' alt='sbi' width={123} height={83} />
-        </div>
+        </div> */}
       </div>
     </div>
   );

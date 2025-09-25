@@ -24,16 +24,16 @@ const WhyUs = ({ exchangeRate }) => {
       <div className='absolute top-[1220px] left-10 -translate-x-1/2 z-[1]'>
         <WhiteConnector />
       </div>
-      <div className='absolute top-[2120px] left-10 -translate-x-1/2 z-[1]'>
+      <div className='absolute top-[2020px] left-10 -translate-x-1/2 z-[1]'>
         <WhiteConnector />
       </div>
-      <div className='absolute top-[3080px] left-10 -translate-x-1/2 z-[1]'>
+      <div className='absolute top-[2980px] left-10 -translate-x-1/2 z-[1]'>
         <WhiteConnector />
       </div>
-      <div className='absolute top-[4050px] left-10 -translate-x-1/2 z-[1]'>
+      <div className='absolute top-[3900px] left-10 -translate-x-1/2 z-[1]'>
         <WhiteConnector />
       </div>
-      <div className='absolute top-[4830px] left-10 -translate-x-1/2 z-[1]'>
+      <div className='absolute top-[4680px] left-10 -translate-x-1/2 z-[1]'>
         <WhiteConnector />
       </div>
     </div>
