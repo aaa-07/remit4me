@@ -1,11 +1,13 @@
 import classNames from 'classnames';
-import { useState, useEffect, useRef } from 'react';
+import {useState, useEffect, useRef} from 'react';
 import Advantages from './advantages';
 import styles from './index.module.css';
 import Form from './form';
 
 const Partners = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [screenHeight, setScreenHeight] = useState(0);
+  const [top, setTop] = useState(0);
   const [showForm, setShowForm] = useState(false);
   const ref = useRef(null);
 
@@ -15,6 +17,10 @@ const Partners = () => {
         return;
       }
       const scrollPercent = ref.current.getBoundingClientRect().top / (ref.current.getBoundingClientRect().height - window.innerHeight);
+      if (Math.min(Math.abs(scrollPercent), 1) > 0 && Math.min(Math.abs(scrollPercent), 1) < 1) {
+        setScreenHeight(window.innerHeight);
+        setTop(ref.current.getBoundingClientRect().top);
+      }
       setScrollPercentage(Math.min(Math.abs(scrollPercent), 1));
     };
     window.addEventListener('scroll', handleScroll);
@@ -44,7 +50,7 @@ const Partners = () => {
               className='flex-shrink-0 w-[222px] h-[304px] rounded-[24px] backdrop-blur-[50px] pl-5 pt-8 pr-8 absolute top-0 left-0'
               style={{
                 background: 'linear-gradient(110.97deg, rgba(232, 61, 255, 0.5) -4.87%, rgba(232, 61, 255, 0) 103.95%)',
-                transform: `translateY(${scrollPercentage * -150}%)`
+                transform: `translateY(${(screenHeight + top) * 1}px)`,
               }}
             >
               <div className='bg-[#E83DFF80] w-[68px] h-[68px] rounded-[50%] flex justify-center items-center'>
@@ -56,7 +62,7 @@ const Partners = () => {
               className='flex-shrink-0 w-[222px] h-[304px] rounded-[24px] backdrop-blur-[50px] pl-5 pt-8 pr-8 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
               style={{
                 background: 'linear-gradient(110.97deg, rgba(234, 255, 48, 0.5) -4.87%, rgba(234, 255, 48, 0) 103.95%)',
-                transform: `translateY(${scrollPercentage * -100}%)`
+                transform: `translateY(${(screenHeight + top) * 3.5}px)`,
               }}
             >
               <div className='bg-[#EAFF30] w-[68px] h-[68px] rounded-[50%] flex justify-center items-center'>
@@ -68,7 +74,7 @@ const Partners = () => {
               className='flex-shrink-0 w-[222px] h-[304px] rounded-[24px] backdrop-blur-[50px] pl-5 pt-8 pr-8 absolute bottom-0 right-0'
               style={{
                 background: 'linear-gradient(110.97deg, rgba(108, 231, 255, 0.5) -4.87%, rgba(108, 231, 255, 0) 103.95%)',
-                transform: `translateY(${scrollPercentage * -10}%)`
+                transform: `translateY(${(screenHeight + top) * 1.5}px)`,
               }}
             >
               <div className='bg-[#6CE7FF] w-[68px] h-[68px] rounded-[50%] flex justify-center items-center'>
@@ -82,7 +88,7 @@ const Partners = () => {
               width={172}
               height={157}
               className='absolute top-[145px] right-[50px]'
-              style={{ transform: `translateY(${scrollPercentage * -200}%)` }}
+              style={{transform: `translateY(${(screenHeight + top) * 2.5}px)`}}
             />
             <img
               src='/images/home/partners/call.png'
@@ -90,7 +96,7 @@ const Partners = () => {
               width={172}
               height={157}
               className='absolute bottom-0 left-[50px]'
-              style={{ transform: `translateY(${scrollPercentage * 0}%)` }}
+              style={{transform: `translateY(${(screenHeight + top) * 2}px)`}}
             />
           </div>
         </div>
