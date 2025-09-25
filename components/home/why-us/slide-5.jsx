@@ -50,7 +50,7 @@ const Slide5 = ({ exchangeRate }) => {
     <div className='h-screen flex bg-white'>
       <div className='w-[671px] bg-[#ADB8FF] relative z-[1]'>
         <img src='/images/home/why-us/student.png' alt='slide-5' width={753} height={574} className='max-w-none absolute left-[-250px] bottom-0' />
-        <div className='border-white-gradient pl-4 pr-5 py-5 rounded-3xl w-[363px] flex items-center absolute bottom-[64px] left-[-90px]'>
+        {/* <div className='border-white-gradient pl-4 pr-5 py-5 rounded-3xl w-[363px] flex items-center absolute bottom-[64px] left-[-90px]'>
           <div>
             <img src='/images/home/why-us/hat.svg' alt='quote' width={44} height={44} className='mr-3' />
           </div>
@@ -58,7 +58,7 @@ const Slide5 = ({ exchangeRate }) => {
             Tuition fee <br /> sent in 2 days
           </div>
           <div className='text-[#232C43] text-[18px]/[18px] font-extrabold ml-auto'>$25,000</div>
-        </div>
+        </div> */}
         <ConverterCard exchangeRate={exchangeRate} />
       </div>
       <div className='w-[1423px] flex justify-center pt-[55vh]'>

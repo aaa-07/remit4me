@@ -4,7 +4,7 @@ const Slide6 = () => {
       <div className='w-[671px] bg-[#C3FFAD] relative z-[1]'>
         <img src='/images/home/why-us/student.png' alt='slide-5' width={753} height={574} className='max-w-none absolute left-[-50px] bottom-0' />
         <div className='border-white-gradient pl-4 pr-5 py-5 rounded-3xl w-[246px] flex items-center absolute bottom-[64px] left-1/2 -translate-x-1/2'>
-          <div>
+          <div className='mr-3'>
             <img src='/images/home/why-us/hat.svg' alt='quote' width={44} height={44} className='mr-3' />
           </div>
           <div className='text-[#232C43] text-[18px]/[18px] font-semibold'>Recurring University Fees</div>

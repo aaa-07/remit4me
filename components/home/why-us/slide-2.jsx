@@ -33,10 +33,10 @@ const Slide2 = ({ scrollPercentage }) => {
             <br /> compliant with RBI regulations.
           </div>
         </div>
-        <div className='h-1/2 pb-[147px] flex items-end gap-6 mix-blend-multiply'>
+        {/* <div className='h-1/2 pb-[147px] flex items-end gap-6 mix-blend-multiply'>
           <Image src='/images/home/why-us/icici.png' alt='icici' width={100} height={100} />
           <Image src='/images/home/why-us/sbi.png' alt='sbi' width={150} height={100} />
-        </div>
+        </div> */}
       </div>
     </div>
   );
