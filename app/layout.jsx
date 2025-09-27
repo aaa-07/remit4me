@@ -7,8 +7,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'Remit4me',
-  description: 'Remit4me'
+  title: 'Remit4me - Fast, Transparent & Trusted Remittance',
+  description: 'One platform for families, students, and businesses. Safe transfers, instant partner onboarding, and complete compliance.'
 };
 
 export default function RootLayout({ children }) {
