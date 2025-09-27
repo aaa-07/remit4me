@@ -9,7 +9,7 @@ const Form = ({setShowForm}) => {
   });
   const [status, setStatus] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCountry, setSelectedCountry] = useState('Select Country');
+  const [selectedCountry, setSelectedCountry] = useState('Currency of Remittance');
   const [searchTerm, setSearchTerm] = useState('');
   const [countries, setCountries] = useState([]);
 
@@ -64,7 +64,7 @@ const Form = ({setShowForm}) => {
         email: '',
         mobile: '',
       });
-      setSelectedCountry('Select Country');
+      setSelectedCountry('Currency of Remittance');
       setShowForm(false);
       setStatus('Sent');
     } else {
@@ -162,7 +162,7 @@ const Form = ({setShowForm}) => {
                 </div>
 
                 {/* Search Bar */}
-                <div className='relative'>
+                <div className='relative mx-0.5'>
                   <img src='/images/home/search.svg' alt='search' className='absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400' />
                   <input
                     type='text'
