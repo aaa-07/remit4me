@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import {useState} from 'react';
+import Form from './form';
 
 const Waitlist = () => {
+  const [showForm, setShowForm] = useState(false);
   return (
     <div className='bg-[#092929] pb-20 flex flex-col items-center' id='waitlist'>
       <div className='text-[#028E75] text-[36px]/[42px] font-semibold'>Welcome bonus</div>
@@ -13,20 +16,23 @@ const Waitlist = () => {
           <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined
         </div>
         <div className='text-center'>
-          <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[26px]/[26px]'>Join now</button>
+          <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[26px]/[26px]' onClick={() => setShowForm(true)}>
+            Join now
+          </button>
         </div>
       </div>
       <div className='flex w-full gap-25 justify-center'>
-        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px]' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
+        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px]' style={{backgroundImage: 'url(/images/home/waitlist-border.svg)'}}>
           17D
         </div>
-        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px]' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
+        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px]' style={{backgroundImage: 'url(/images/home/waitlist-border.svg)'}}>
           23H
         </div>
-        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px]' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
+        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px]' style={{backgroundImage: 'url(/images/home/waitlist-border.svg)'}}>
           31M
         </div>
       </div>
+      {showForm && <Form setShowForm={setShowForm} />}
     </div>
   );
 };
