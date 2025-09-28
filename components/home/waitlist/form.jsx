@@ -136,7 +136,7 @@ const Form = ({setShowForm}) => {
                   <button
                     onClick={() => setIsModalOpen(true)}
                     type='button'
-                    className='w-full px-4 py-3 border-0 border-b-2 border-gray-200 bg-transparent text-left text-gray-400 focus:border-teal-600 focus:outline-none flex items-center justify-between'
+                    className='w-full px-4 py-3 border border-gray-200 rounded-lg bg-transparent text-left text-gray-400 focus:border-teal-600 focus:outline-none flex items-center justify-between'
                   >
                     <span>{selectedCountry}</span>
                     <img src='/images/home/why-us/down-arrow.svg' alt='chevron-down' width={12} height={6} />
