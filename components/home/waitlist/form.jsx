@@ -28,7 +28,8 @@ const Form = ({setShowForm}) => {
   const fetchCountries = async () => {
     const response = await fetch('https://countriesnow.space/api/v0.1/countries/flag/images');
     const data = await response.json();
-    setCountries(data.data);
+    const removedCountries = data.data.filter((country) => country.name !== 'India');
+    setCountries(removedCountries);
   };
 
   const filteredCountries = countries.filter((country) => country.name.toLowerCase().includes(searchTerm.toLowerCase()));
