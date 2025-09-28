@@ -75,14 +75,14 @@ const Form = ({setShowForm}) => {
 
   return (
     <div className='backdrop-blur-2xl h-screen flex items-center justify-center fixed inset-0 z-50'>
-      <div className='absolute top-4 right-4 text-white bg-opacity-50 cursor-pointer' onClick={() => setShowForm(false)}>
-        X
-      </div>
       {/* Waitlist Form Modal */}
       <div className='flex items-center justify-center'>
-        <div className='bg-white rounded-4xl p-8 max-w-md md:w-90 mx-4 border-[1px] border-[#DCDCDC]'>
+        <div className='bg-white rounded-4xl p-8 max-w-md md:w-90 mx-4 border-[1px] border-[#DCDCDC] relative'>
           {!isModalOpen && (
             <>
+              <div className='absolute top-6 right-6 text-white bg-opacity-50 cursor-pointer' onClick={() => setShowForm(false)}>
+                <Image src='/images/home/close.svg' alt='close' width={11} height={11} />
+              </div>
               {/* Title */}
               <h2 className='text-2xl font-bold text-gray-900 text-center mb-4'>Join now</h2>
 
@@ -158,7 +158,7 @@ const Form = ({setShowForm}) => {
                 <div className='flex items-center justify-between mb-2'>
                   <div className='text-xl font-bold'></div>
                   <button onClick={() => setIsModalOpen(false)} className='font-semibold'>
-                    X
+                    <Image src='/images/home/close.svg' alt='close' width={11} height={11} />
                   </button>
                 </div>
 
