@@ -1,6 +1,6 @@
 import useInView from '@/components/hooks/inView';
 import classNames from 'classnames';
-import { useRef, useState } from 'react';
+import {useRef, useState} from 'react';
 import Form from '../partners/form';
 
 const Partners = () => {
@@ -22,7 +22,7 @@ const Partners = () => {
 
   return (
     <>
-      <div className='bg-[#092929] text-white pb-60 overflow-x-hidden rounded-b-[56px]'>
+      <div className='bg-[#092929] text-white pb-60 overflow-x-hidden rounded-b-[56px]' id='partner-mobile'>
         <img src='/images/home/mobile/handshake.png' alt='partners' height={311} className='w-full' />
         <div className={classNames('transition-all duration-1000', isInView1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-25')} ref={ref1}>
           <div className={classNames('text-[16px]/[36px] font-medium mb-4 px-8')}>Become a Partner</div>
@@ -41,7 +41,7 @@ const Partners = () => {
         >
           <div
             className='flex-shrink-0 w-[222px] h-[304px] rounded-[24px] backdrop-blur-[50px] pl-5 pt-8 pr-8'
-            style={{ background: 'linear-gradient(110.97deg, rgba(232, 61, 255, 0.5) -4.87%, rgba(232, 61, 255, 0) 103.95%)' }}
+            style={{background: 'linear-gradient(110.97deg, rgba(232, 61, 255, 0.5) -4.87%, rgba(232, 61, 255, 0) 103.95%)'}}
           >
             <div className='bg-[#E83DFF80] w-[68px] h-[68px] rounded-[50%] flex justify-center items-center'>
               <img src='/images/home/mobile/light.svg' alt='partner' height={39} width={39} />
@@ -50,7 +50,7 @@ const Partners = () => {
           </div>
           <div
             className='flex-shrink-0 w-[222px] h-[304px] rounded-[24px] backdrop-blur-[50px] pl-5 pt-8 pr-8'
-            style={{ background: 'linear-gradient(110.97deg, rgba(234, 255, 48, 0.5) -4.87%, rgba(234, 255, 48, 0) 103.95%)' }}
+            style={{background: 'linear-gradient(110.97deg, rgba(234, 255, 48, 0.5) -4.87%, rgba(234, 255, 48, 0) 103.95%)'}}
           >
             <div className='bg-[#EAFF30] w-[68px] h-[68px] rounded-[50%] flex justify-center items-center'>
               <img src='/images/home/mobile/chip.svg' alt='partner' height={39} width={39} />
@@ -59,7 +59,7 @@ const Partners = () => {
           </div>
           <div
             className='flex-shrink-0 w-[222px] h-[304px] rounded-[24px] backdrop-blur-[50px] pl-5 pt-8 pr-8'
-            style={{ background: 'linear-gradient(110.97deg, rgba(108, 231, 255, 0.5) -4.87%, rgba(108, 231, 255, 0) 103.95%)' }}
+            style={{background: 'linear-gradient(110.97deg, rgba(108, 231, 255, 0.5) -4.87%, rgba(108, 231, 255, 0) 103.95%)'}}
           >
             <div className='bg-[#6CE7FF] w-[68px] h-[68px] rounded-[50%] flex justify-center items-center'>
               <img src='/images/home/mobile/expand.svg' alt='partner' height={39} width={39} />
