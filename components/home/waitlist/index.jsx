@@ -57,13 +57,13 @@ const Waitlist = () => {
         </div>
       </div>
       <div className='flex w-full gap-25 justify-center'>
-        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px] text-center' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
+        <div className='text-white text-[76px]/[106px] font-bold py-20 w-[185px] h-[273px] text-center' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
           {timeLeft.days}D
         </div>
-        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px] text-center' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
+        <div className='text-white text-[76px]/[106px] font-bold py-20 w-[185px] h-[273px] text-center' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
           {timeLeft.hours}H
         </div>
-        <div className='text-white text-[76px]/[106px] font-bold px-5 py-20 w-[185px] h-[273px] text-center' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
+        <div className='text-white text-[76px]/[106px] font-bold py-20 w-[185px] h-[273px] text-center' style={{ backgroundImage: 'url(/images/home/waitlist-border.svg)' }}>
           {timeLeft.minutes}M
         </div>
       </div>

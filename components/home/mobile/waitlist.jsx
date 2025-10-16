@@ -56,19 +56,19 @@ const Waitlist = () => {
       </div>
       <div className='flex w-full justify-around'>
         <div
-          className='text-white text-[32px]/[46px] font-bold px-2 py-5 w-[81px] h-[95px] text-center'
+          className='text-white text-[32px]/[46px] font-bold py-5 w-[81px] h-[95px] text-center'
           style={{ backgroundImage: 'url(/images/home/mobile/waitlist-border.svg)', backgroundSize: 'contain' }}
         >
           {timeLeft.days}D
         </div>
         <div
-          className='text-white text-[32px]/[46px] font-bold px-2 py-5 w-[81px] h-[95px] text-center'
+          className='text-white text-[32px]/[46px] font-bold py-5 w-[81px] h-[95px] text-center'
           style={{ backgroundImage: 'url(/images/home/mobile/waitlist-border.svg)', backgroundSize: 'contain' }}
         >
           {timeLeft.hours}H
         </div>
         <div
-          className='text-white text-[32px]/[46px] font-bold px-2 py-5 w-[81px] h-[95px] text-center'
+          className='text-white text-[32px]/[46px] font-bold py-5 w-[81px] h-[95px] text-center'
           style={{ backgroundImage: 'url(/images/home/mobile/waitlist-border.svg)', backgroundSize: 'contain' }}
         >
           {timeLeft.minutes}M
