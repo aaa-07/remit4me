@@ -47,7 +47,7 @@ const Waitlist = () => {
         <span className='text-[#EAFF30]'>1500/- discount</span> on <br /> your first transfer
       </div>
       <div className='flex w-full justify-center text-white text-[20px]/[42px] mb-9'>
-        <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined
+        {/* <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined */}
       </div>
       <div className='text-center mb-16'>
         <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[18px]/[26px]' onClick={() => setShowForm(true)}>

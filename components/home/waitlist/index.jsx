@@ -48,7 +48,7 @@ const Waitlist = () => {
       </div>
       <div className='flex justify-center gap-8 items-center mb-22'>
         <div className='flex w-full justify-center text-white text-[20px]/[42px]'>
-          <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined
+          {/* <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined */}
         </div>
         <div className='text-center'>
           <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[26px]/[26px]' onClick={() => setShowForm(true)}>
