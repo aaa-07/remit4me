@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+import { useState, useEffect } from 'react';
 import classNames from 'classnames';
+import Form from './form';
 
 const inter = Inter({ subsets: ['latin'] });
 
 const Footer = () => {
+  const [showForm, setShowForm] = useState(false);
   return (
-    <div className='bg-[#EDF7F7] sticky bottom-0 z-[-1] text-[#092929] overflow-hidden'>
+    <div className='bg-[#EDF7F7] bottom-0 text-[#092929] overflow-hidden'>
       <div className='max-w-[1512px] mx-auto relative'>
         <div className='px-21 pt-45 pb-60'>
           <div className='rounded-[56px] bg-white p-20 flex justify-between items-center'>
@@ -23,13 +26,14 @@ const Footer = () => {
               </div>
             </div>
             <div className='flex gap-8'>
-              <div className='text-[18px]/[28px]'>Privacy policy</div>
+              <div className='text-[18px]/[28px] cursor-pointer' onClick={() =>{ setShowForm(true)} }>Privacy policy</div>
               <div className='text-[18px]/[28px]'>Terms of service</div>
             </div>
           </div>
         </div>
         <div className={classNames('text-[300px]/[300px] font-bold opacity-5 absolute bottom-[-100px] left-1/2 translate-x-[-50%]', inter.className)}>remit4me</div>
       </div>
+      {showForm && <Form setShowForm={setShowForm} />}
     </div>
   );
 };

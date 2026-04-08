@@ -10,7 +10,7 @@ const Waitlist = () => {
     const calculateTimeLeft = () => {
       const now = new Date();
       const currentYear = now.getFullYear();
-      const targetDate = new Date(currentYear, 11, 31, 23, 59, 59); // December 31st at 23:59:59
+      const targetDate = new Date(currentYear, 3, 20, 23, 59, 59); // April 20th at 23:59:59
 
       // If December 31st has passed this year, target next year
       if (now > targetDate) {
