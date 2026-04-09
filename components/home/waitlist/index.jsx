@@ -39,6 +39,10 @@ const Waitlist = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const handleJoin = () => {
+    window.open('https://prod.remit4me.com/', '_blank'); // _blank opens in a new tab
+  };
+
   return (
     <div className='bg-[#092929] pb-20 flex flex-col items-center' id='waitlist'>
       <div className='text-[#028E75] text-[36px]/[42px] font-semibold'>Welcome bonus</div>
@@ -51,8 +55,8 @@ const Waitlist = () => {
           {/* <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined */}
         </div>
         <div className='text-center'>
-          <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[26px]/[26px]' onClick={() => setShowForm(true)}>
-            Join now
+          <button className="bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[26px]/[26px]" onClick={handleJoin} > 
+              Join now
           </button>
         </div>
       </div>

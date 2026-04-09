@@ -29,7 +29,7 @@ const Advantages = () => {
       <div className=''>
         {/* Header Section */}
         <div className='text-center text-white'>
-          <p className='text-[24px]/[36px] font-medium mb-3'>Become a Partner</p>
+          {/* <p className='text-[24px]/[36px] font-medium mb-3'>Become a Partner</p> */}
           <h2 className='text-[40px]/[64px] font-medium'>
             Our partners have advantage right <br /> from the day one
           </h2>

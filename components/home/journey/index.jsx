@@ -55,7 +55,7 @@ const Journey = () => {
                 <div className={classNames(styles.number)}>03</div>
                 <div className={classNames(styles.title, 'text-[#028E75]')}>Complete KYC Online</div>
                 <div className={classNames(styles.content)}>
-                  Upload your ID and supporting documents through our secure, encrypted portal. Get verified online - no branch visits or paperwork delays.{' '}
+                  Upload your ID and supporting documents through our partner banks secure encrypted kyc engine. Get verified online- no Branch visits or paperwork delays.{' '}
                 </div>
               </div>
               <div className={classNames(styles.card, 'w-[400px] h-[526px] border-r-[#028E75] border-r-[1px]')}>

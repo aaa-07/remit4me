@@ -26,6 +26,10 @@ const Partners = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleJoin = () => {
+    window.open('https://prod.remit4me.com/operations/fgPage/915d9e5f-5a3a-4e73-951f-69c6033868ce/524d7160-5b20-4bc4-ae1f-32a004ee7e45', '_blank'); // _blank opens in a new tab
+  };
   return (
     <>
       <div className={classNames(' bg-blue-500 text-white h-[300vh]')} ref={ref} id='partner'>
@@ -39,7 +43,10 @@ const Partners = () => {
             <br /> remittance services from day one - without building a <br /> single thing yourself.
           </div>
           <div className='flex justify-center'>
-            <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={() => setShowForm(true)}>
+            {/* <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={() => setShowForm(true)}>
+              Become Partner
+            </button> */}
+            <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={handleJoin}>
               Become Partner
             </button>
           </div>

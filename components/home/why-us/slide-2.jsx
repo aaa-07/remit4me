@@ -13,7 +13,7 @@ const Slide2 = ({ scrollPercentage }) => {
             className='h-[708px] absolute inset-0 w-[668px] max-w-none left-[200px]'
             style={{ transform: `translateX(${Math.min(scrollPercentage, 0.3) * -100}%)` }}
           />
-          <div className='border-white-gradient pl-4 pr-6 py-4 rounded-3xl w-[522px] flex items-center absolute bottom-12 left-[200px]'>
+          <div className='border-white-gradient pl-4 pr-6 py-4 rounded-3xl w-[522px] flex items-center absolute bottom-12 left-[200px] hidden'>
             <div>
               <img src='/images/home/why-us/hat.svg' alt='quote' width={44} height={44} className='mr-3' />
             </div>
