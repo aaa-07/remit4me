@@ -1,13 +1,23 @@
+const sendNow = () => {
+    window.open('https://prod.remit4me.com/', '_blank'); // _blank opens in a new tab
+}
+
 const ConverterCard = ({ exchangeRate }) => {
+  const adjustedRate = exchangeRate + 1.5;
   return (
     <div className='converter-shadow rounded-[36px] bg-white px-7 pt-7 pb-10 w-[573px] absolute left-[190px] bottom-[250px]'>
-      <div className='py-1 pl-1 pr-4 flex items-center bg-[#F3F3F3] rounded-[30px] w-[350px] mb-4'>
-        <div className='flex items-center gap-2 bg-[#E2E2E2] rounded-[30px] pl-2 py-2 pr-3'>
-          <img src='/images/home/why-us/lock.svg' alt='lock' width={19} height={19} />
-          <div className='text-[#232C43] text-[18px]/[18px] font-medium'>23h</div>
+      <div className="flex justify-between">
+        <div className='py-1 pl-1 pr-4 flex items-center bg-[#F3F3F3] rounded-[30px] mb-4'>
+            <div className='flex items-center gap-2 bg-[#E2E2E2] rounded-[30px] pl-2 py-2 pr-3'>
+              <img src='/images/home/why-us/lock.svg' alt='lock' width={19} height={19} />
+              {/* <div className='text-[#232C43] text-[18px]/[18px] font-medium'>23h</div> */}
+            </div>
+            <div className='text-[#232C43] text-[24px]/[24px] font-medium ml-3'>1 USD = {adjustedRate} INR</div>
+            {/* <img src='/images/home/why-us/right-arrow.svg' alt='arrow' width={9} height={9} className='ml-auto' /> */}
         </div>
-        <div className='text-[#232C43] text-[24px]/[24px] font-medium ml-3'>1 USD = {exchangeRate} INR</div>
-        {/* <img src='/images/home/why-us/right-arrow.svg' alt='arrow' width={9} height={9} className='ml-auto' /> */}
+        <button className='ml-4 bg-[#098e90]  h-[43px] text-white px-5 py-2 rounded-[30px] text-[16px] font-semibold hover:opacity-90' onClick={sendNow}>
+          Send Now
+        </button>
       </div>
       <div className='flex mb-3'>
         <img src='/images/home/why-us/download.svg' alt='left' width={24} height={24} />
@@ -39,7 +49,7 @@ const ConverterCard = ({ exchangeRate }) => {
           <div className='text-[#232C43] text-[24px]/[47px] font-medium mx-3'>INR</div>
           {/* <img src='/images/home/why-us/down-arrow.svg' alt='usd' width={14} height={7} /> */}
         </div>
-        <div className='text-[#232C43] text-[47px]/[47px] font-extrabold ml-auto'>{new Intl.NumberFormat('en-IN').format(1000 * exchangeRate)}.00</div>
+        <div className='text-[#232C43] text-[47px]/[47px] font-extrabold ml-auto'>{new Intl.NumberFormat('en-IN').format(1000 * adjustedRate)}.00</div>
       </div>
     </div>
   );

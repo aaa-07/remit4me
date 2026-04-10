@@ -6,6 +6,18 @@ import Form from './form';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const linkFacebook = () => {
+    window.open('https://www.facebook.com/share/1EL9TbpzmF/', '_blank');
+}
+
+const linkLinkedIn = () => {
+    window.open('https://www.linkedin.com/company/remit4me/', '_blank'); 
+}
+
+const linkInstagram = () => {
+    window.open('https://www.instagram.com/remit4me?igsh=ajgxMTI3ZzNrdzVy', '_blank');
+}
+
 const Footer = () => {
   const [showForm, setShowForm] = useState(false);
   return (
@@ -19,10 +31,10 @@ const Footer = () => {
                 Whether for education, family, or investments, send <br /> money worldwide with clarity and trust.
               </div>
               <div className='flex gap-8'>
-                <Image src='/images/home/media/facebook.svg' alt='facebook' width={32} height={32} />
-                <Image src='/images/home/media/x.svg' alt='x' width={32} height={32} />
-                <Image src='/images/home/media/linkedin.svg' alt='linkedin' width={32} height={32} />
-                <Image src='/images/home/media/youtube.svg' alt='youtube' width={32} height={32} />
+                <Image onClick={linkFacebook} src='/images/home/media/facebook.svg' alt='facebook' width={32} height={32} />
+                <Image onClick={linkLinkedIn} src='/images/home/media/linkedin.svg' alt='linkedin' width={32} height={32} />
+                <Image onClick={linkInstagram} src='/images/home/media/instagram.png' alt='instagram' width={32} height={32} />
+                {/* <Image src='/images/home/media/youtube.svg' alt='youtube' width={32} height={32} /> */}
               </div>
             </div>
             <div className='flex gap-8'>

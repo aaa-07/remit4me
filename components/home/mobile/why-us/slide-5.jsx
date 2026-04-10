@@ -3,17 +3,29 @@ import classNames from 'classnames';
 import { useRef } from 'react';
 import useInView from '@/components/hooks/inView';
 
+
+const sendNow = () => {
+    window.open('https://prod.remit4me.com/', '_blank'); // _blank opens in a new tab
+}
+
 const ConverterCard = ({ exchangeRate }) => {
+  const adjustedRate = exchangeRate + 1.5;
   return (
     <div className='converter-shadow rounded-[22px] bg-white px-4 pt-4 pb-6 w-[330px] absolute left-1/2 -translate-x-1/2 bottom-[-180px]'>
-      <div className='py-1 pl-1 pr-3 flex items-center bg-[#F3F3F3] rounded-[17px] w-[220px] mb-2.5'>
-        <div className='flex items-center gap-2 bg-[#E2E2E2] rounded-[17px] pl-2 py-2 pr-3'>
-          <img src='/images/home/why-us/lock.svg' alt='lock' width={11} height={11} />
-          <div className='text-[#232C43] text-[11px]/[11px] font-medium'>23h</div>
+      <div className="flex justify-between">
+        <div className='py-1 pl-1 pr-3 flex items-center bg-[#F3F3F3] rounded-[17px] mb-2.5'>
+          <div className='flex items-center gap-2 bg-[#E2E2E2] rounded-[17px] pl-2 py-2 pr-3'>
+            <img src='/images/home/why-us/lock.svg' alt='lock' width={11} height={11} />
+            {/* <div className='text-[#232C43] text-[11px]/[11px] font-medium'>23h</div> */}
+          </div>
+          <div className='text-[#232C43] text-[13px]/[13px] font-medium ml-3'>1 USD = {adjustedRate} INR</div>
+          {/* <img src='/images/home/why-us/right-arrow.svg' alt='arrow' width={6} height={3} className='ml-auto' /> */}
         </div>
-        <div className='text-[#232C43] text-[13px]/[13px] font-medium ml-3'>1 USD = {exchangeRate} INR</div>
-        {/* <img src='/images/home/why-us/right-arrow.svg' alt='arrow' width={6} height={3} className='ml-auto' /> */}
+        <button className='ml-4 bg-[#098e90]  h-[33px] text-white px-5 py-2 rounded-[30px] text-[12px] font-semibold hover:opacity-90' onClick={sendNow}>
+          Send Now
+        </button>
       </div>
+      
       <div className='flex mb-1.5'>
         <img src='/images/home/why-us/download.svg' alt='left' width={14} height={14} />
         <div className='text-[#232C43] text-[13px]/[27px] ml-2 font-medium'>Recipient receive</div>
@@ -44,7 +56,7 @@ const ConverterCard = ({ exchangeRate }) => {
           <div className='text-[#232C43] text-[14px]/[27px] font-medium mx-3'>INR</div>
           {/* <img src='/images/home/why-us/down-arrow.svg' alt='usd' width={8} height={4} /> */}
         </div>
-        <div className='text-[#232C43] text-[27px]/[27px] font-extrabold ml-auto'>{new Intl.NumberFormat('en-IN').format(1000 * exchangeRate)}.00</div>
+        <div className='text-[#232C43] text-[27px]/[27px] font-extrabold ml-auto'>{new Intl.NumberFormat('en-IN').format(1000 * adjustedRate)}.00</div>
       </div>
     </div>
   );

@@ -30,7 +30,8 @@ const Header = () => {
           lastScrollY > 844 && lastScrollY < 6425 ? 'bg-[#092929]' : lastScrollY > 0 ? 'bg-[#ffffff29] backdrop-blur-md' : 'bg-transparent'
         )}
       >
-        <div className='text-[20px] font-bold  text-white'>remit4me</div>
+        {/* <div className='text-[20px] font-bold  text-white'>remit4me</div> */}
+        <div className='text-[20px]/[20px] font-bold' onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} ><Image src='/images/home/R4m-logo.png' alt='remit4me logo' width={160} height={90}/></div>
         <img src='/images/home/mobile/menu.svg' alt='menu' width={20} height={16} className='' onClick={() => setIsMenuOpen(!isMenuOpen)} />
       </div>
       <div
