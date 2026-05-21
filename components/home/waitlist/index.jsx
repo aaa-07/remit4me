@@ -55,7 +55,7 @@ const Waitlist = () => {
           {/* <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined */}
         </div>
         <div className='text-center'>
-          <button className="bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[26px]/[26px]" onClick={handleJoin} > 
+          <button className="bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[26px]/[26px]"  > 
               Join now
           </button>
         </div>

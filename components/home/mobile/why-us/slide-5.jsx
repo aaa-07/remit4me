@@ -21,7 +21,7 @@ const ConverterCard = ({ exchangeRate }) => {
           <div className='text-[#232C43] text-[13px]/[13px] font-medium ml-3'>1 USD = {adjustedRate} INR</div>
           {/* <img src='/images/home/why-us/right-arrow.svg' alt='arrow' width={6} height={3} className='ml-auto' /> */}
         </div>
-        <button className='ml-4 bg-[#098e90]  h-[33px] text-white px-5 py-2 rounded-[30px] text-[12px] font-semibold hover:opacity-90' onClick={sendNow}>
+        <button className='ml-4 bg-[#098e90]  h-[33px] text-white px-5 py-2 rounded-[30px] text-[12px] font-semibold hover:opacity-90'>
           Send Now
         </button>
       </div>
