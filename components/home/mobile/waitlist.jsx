@@ -10,7 +10,7 @@ const Waitlist = () => {
     const calculateTimeLeft = () => {
       const now = new Date();
       const currentYear = now.getFullYear();
-      const targetDate = new Date(currentYear, 5, 10, 23, 59, 59); // April 20th at 23:59:59
+      const targetDate = new Date(currentYear, 8, 7, 23, 59, 59); // September 7th at 23:59:59
 
       // If December 31st has passed this year, target next year
       if (now > targetDate) {
@@ -54,7 +54,7 @@ const Waitlist = () => {
         {/* <Image src='/images/home/waitlist.svg' alt='waitlist' width={52} height={24} className='mr-2' /> 32k+ Joined */}
       </div>
       <div className='text-center mb-16'>
-        <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[18px]/[26px]'>
+        <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[18px]/[26px]' onClick={handleJoin}>
           Join now
         </button>
       </div>

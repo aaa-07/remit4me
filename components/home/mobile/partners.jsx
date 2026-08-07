@@ -73,12 +73,12 @@ const Partners = () => {
         </div>
 
         <div className='flex justify-center mb-43'>
-          <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[18px]/[26px]' onClick={() => setShowForm(true)}>
-            Become Partner
-          </button>
-          {/* <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[18px]/[26px]' onClick={handleJoin}>
+          {/* <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[18px]/[26px]' onClick={() => setShowForm(true)}>
             Become Partner
           </button> */}
+          <button className='bg-white text-[#232C43] w-[280px] h-[55px] rounded-[36px] font-bold text-[18px]/[26px]' onClick={handleJoin}>
+            Become Partner
+          </button>
         </div>
         <div className={classNames('transition-all duration-1000', isInView3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-25')} ref={ref3}>
           {/* <div className='text-[16px]/[36px] font-medium mb-3 px-8'>Become a Partner</div> */}

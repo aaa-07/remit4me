@@ -43,12 +43,12 @@ const Partners = () => {
             <br /> remittance services from day one - without building a <br /> single thing yourself.
           </div>
           <div className='flex justify-center'>
-            <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={() => setShowForm(true)}>
-              Become Partner
-            </button>
-            {/* <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={handleJoin}>
+            {/* <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={() => setShowForm(true)}>
               Become Partner
             </button> */}
+            <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={handleJoin}>
+              Become Partner
+            </button>
           </div>
         </div>
         <div className='flex justify-center'>
