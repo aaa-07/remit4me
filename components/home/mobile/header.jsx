@@ -9,7 +9,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [show, setShow] = useState(true);
-
+const [isLoginOpen, setIsLoginOpen] = useState(false);
   const handleScroll = () => {
     setLastScrollY(window.scrollY);
     setShow(window.scrollY < lastScrollY);
@@ -71,6 +71,55 @@ const Header = () => {
             }}
           >
             Become a partner
+          </div>
+          {/* Login */}
+          <div className="w-full">
+            <div
+              className="text-[32px] font-medium cursor-pointer flex items-center justify-between"
+              onClick={() => setIsLoginOpen(!isLoginOpen)}
+            >
+              <span>Login</span>
+              <span
+                className={classNames(
+                  'text-[28px] transition-transform duration-300',
+                  isLoginOpen ? 'rotate-180' : 'rotate-0'
+                )}
+              >
+                ⌄
+              </span>
+            </div>
+
+            {/* Login Options */}
+            <div
+              className={classNames(
+                'overflow-hidden transition-all duration-300 ease-in-out',
+                isLoginOpen
+                  ? 'max-h-[160px] opacity-100 mt-3'
+                  : 'max-h-0 opacity-0 mt-0'
+              )}
+            >
+              {/* Login to Send Money */}
+              <div
+                className="text-[20px] font-medium py-3 pl-5 cursor-pointer "
+                onClick={() => {
+                  window.location.href =
+                    'https://prod.remit4me.com/indusind/r4m/login';
+                }}
+              >
+                Login to Send Money
+              </div>
+
+              {/* Login as Partner */}
+              <div
+                className="text-[20px] font-medium  py-3 pl-5 cursor-pointer "
+                onClick={() => {
+                  window.location.href =
+                    'https://prod.remit4me.com/operations/';
+                }}
+              >
+                Login as Partner
+              </div>
+            </div>
           </div>
         </div>
       </div>

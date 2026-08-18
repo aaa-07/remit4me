@@ -40,7 +40,7 @@ const Waitlist = () => {
   }, []);
 
   const handleJoin = () => {
-    window.open('https://prod.remit4me.com/', '_blank'); // _blank opens in a new tab
+    window.open('https://prod.remit4me.com/operations/page/105dc900-2ef6-49f2-93b6-bc71c5abd4d1/524d7160-5b20-4bc4-ae1f-32a004ee7e45', '_blank'); // _blank opens in a new tab
   };
 
   return (

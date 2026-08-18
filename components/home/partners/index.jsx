@@ -38,7 +38,7 @@ const Partners = () => {
           <div className='text-[64px]/[92px] font-bold mt-5 mb-10 text-center'>
             Your Brand. Our Global Rails. <br /> Zero Roadblocks.
           </div>
-          <div className='text-[24px]/[36px] text-[#556F6F] mb-24 text-center'>
+          <div className='text-[24px]/[36px] text-[#556F6F] mb-8 min-[960px]:mb-24 text-center'>
             Expand your reach, earn effortlessly, and offer world-class
             <br /> remittance services from day one - without building a <br /> single thing yourself.
           </div>
@@ -47,7 +47,7 @@ const Partners = () => {
               Become Partner
             </button> */}
             <button className='bg-white text-[#232C43] px-16 py-5 rounded-[32px] font-bold text-lg mx-auto' onClick={handleJoin}>
-              Become Partner
+              Become a Partner
             </button>
           </div>
         </div>

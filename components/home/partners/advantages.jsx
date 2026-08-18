@@ -25,8 +25,8 @@ const Advantages = () => {
   ];
 
   return (
-    <div className='bg-[#092929] text-white py-20 px-6'>
-      <div className=''>
+    <div className='bg-[#092929] text-white py-20 px-6 '>
+      <div className='min-[770px]:mt-[100px] min-[968px]:mt-[75px]'>
         {/* Header Section */}
         <div className='text-center text-white'>
           {/* <p className='text-[24px]/[36px] font-medium mb-3'>Become a Partner</p> */}
